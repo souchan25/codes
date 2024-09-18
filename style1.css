@@ -22,8 +22,8 @@
 }
 .btn-brand:hover{
     background-color: transparent !important;
-    border: 3px white solid !important;
-    color: white !important;
+    border: 3px rgb(255, 255, 255) solid !important;
+    color: rgb(223, 20, 20) !important;
     
 }
 
@@ -49,4 +49,21 @@ section{
 
 .uwu{
     padding: 30px;
-} 
+}
+
+.card{
+    transition: background-color 0.3s, color 0.3ms;
+    border: 5px solid var(--border);  /*border-style*/
+    box-shadow: 0 0 10px;
+    border-radius: 30px;
+}
+
+.card:hover{
+    background-color: rgb(90, 77, 77);
+}
+
+.card:hover .card-title,
+.card:hover .card-text,
+.card:hover .btn{
+    color: white;
+}
