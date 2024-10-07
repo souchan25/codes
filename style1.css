@@ -67,3 +67,72 @@ section{
 .card:hover .btn{
     color: white;
 }
+
+#cta{
+    height: 70vh;
+    background-image: url(ctaa.webp);
+    background-size: cover;
+    backdrop-filter: blur;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.testimonials{
+    border: 2px solid brown;
+    padding: 30px;
+    border-radius: 30px;
+    margin: 20px;
+}
+
+.testimonials img{
+    width: 65px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.testimonials a{
+    color: brown;
+}
+
+.faq-section{
+    max-width: 800px;
+    margin: auto;
+}
+
+.accordion-item{
+    margin-bottom: 20px;
+    border-radius: 0 !important;
+}
+
+.accordion-button{
+    background-color: #f8f9fa;
+    border: none;
+    border-bottom: 1px solid #dee2e6;
+    border-radius: 0 !important;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #343a40;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.accordion-body{
+    border-left: 3px solid brown;
+    padding: 10px 15px;
+    margin-left: 0;
+    background-color: #f8f9fa;
+}
+
+.accordion-button:not(.collapsed){
+    background-color: brown;
+    color: #FFF;
+}
+.accordion-button:hover{
+    background-color: brown;
+    color: #FFF;
+}
+
+#faq{
+    background-color: #FAFAFA;
+}
