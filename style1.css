@@ -1,4 +1,51 @@
-#banner{
+/* General Mobile Adjustments */
+@media (max-width: 768px) {
+    #banner, #cta {
+      padding: 60px 0;
+      text-align: center;
+    }
+    
+    .card {
+      margin-bottom: 20px;
+    }
+  
+    .testimonials img {
+      width: 50px; /* Reduce image size for mobile */
+    }
+  
+    .accordion-button {
+      font-size: 1rem;
+    }
+  
+    .uwu {
+      width: 100px; /* Adjust icon size for smaller screens */
+    }
+    
+    #aboutus img {
+      max-width: 100%;
+    }
+  
+    .btn-brand {
+      display: block;
+      margin: 10px auto;
+    }
+  }
+  
+  /* For extra small screens */
+  @media (max-width: 576px) {
+    h1, h2 {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 0.9rem;
+    }
+  
+    .col-lg-4 {
+      width: 100%; /* Stack cards vertically */
+    }
+  }
+  
+  #banner{
     height: 90vh;
     background-image: url(bf.jpg);
     background-size: cover;
@@ -16,15 +63,15 @@
 }
 
 .btn-brand{
-    background-color: brown !important;
+    background-color: teal !important;
     color: #fff !important;
     border: 3px solid #fff !important;
 }
+
 .btn-brand:hover{
     background-color: transparent !important;
-    border: 3px rgb(255, 255, 255) solid !important;
-    color: rgb(223, 20, 20) !important;
-    
+    border: 3px solid teal !important;
+    color: orange !important;
 }
 
 section{
@@ -34,7 +81,7 @@ section{
 #aboutus h1{
     font-size: 55px;
     font-weight: 900;
-    color: brown;
+    color: teal;
     -webkit-text-stroke: 2px;
     -webkit-text-stroke-color: #000000;
 }
@@ -42,7 +89,7 @@ section{
 #services h3{
     font-size: 55px;
     font-weight: 900;
-    color: brown;
+    color: teal;
     -webkit-text-stroke: 2px;
     -webkit-text-stroke-color: #000000;
 }
@@ -59,7 +106,7 @@ section{
 }
 
 .card:hover{
-    background-color: rgb(59, 190, 230);
+    background-color: rgb(90, 77, 77);
 }
 
 .card:hover .card-title,
@@ -67,72 +114,188 @@ section{
 .card:hover .btn{
     color: white;
 }
+/* General Mobile Adjustments */
+@media (max-width: 768px) {
+  #banner, #cta {
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .card {
+    margin-bottom: 20px;
+  }
+
+  .testimonials img {
+    width: 50px; /* Reduce image size for mobile */
+  }
+
+  .accordion-button {
+    font-size: 1rem;
+  }
+
+  .uwu {
+    width: 100px; /* Adjust icon size for smaller screens */
+  }
+  
+  #aboutus img {
+    max-width: 100%;
+  }
+
+  .btn-brand {
+    display: block;
+    margin: 10px auto;
+  }
+}
+
+/* For extra small screens */
+@media (max-width: 576px) {
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+
+  .col-lg-4 {
+    width: 100%; /* Stack cards vertically */
+  }
+}
+
+#banner{
+  height: 90vh;
+  background-image: url(bf.jpg);
+  background-size: cover;
+  backdrop-filter: blur;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.btn{
+  padding: 15px 30px !important;
+  border-radius: 60px !important;
+  font-size: 13px !important;
+  font-weight: 900 !important;
+  transition: all .4s ease !important;
+}
+
+.btn-brand{
+  background-color: teal !important;
+  color: #fff !important;
+  border: 3px solid #fff !important;
+}
+
+.btn-brand:hover{
+  background-color: transparent !important;
+  border: 3px solid teal !important;
+  color: orange !important;
+}
+
+section{
+  padding: 100px 0px;
+}
+
+#aboutus h1{
+  font-size: 55px;
+  font-weight: 900;
+  color: teal;
+  -webkit-text-stroke: 2px;
+  -webkit-text-stroke-color: #000000;
+}
+
+#services h3{
+  font-size: 55px;
+  font-weight: 900;
+  color: teal;
+  -webkit-text-stroke: 2px;
+  -webkit-text-stroke-color: #000000;
+}
+
+.uwu{
+  padding: 30px;
+}
+
+.card{
+  transition: background-color 0.3s, color 0.3ms;
+  border: 5px solid var(--border);  /*border-style*/
+  box-shadow: 0 0 10px;
+  border-radius: 30px;
+}
+
+.card:hover{
+  background-color: teal;
+}
+
+.card:hover .card-title,
+.card:hover .card-text,
+.card:hover .btn{
+  color: white;
+}
 
 #cta{
-    height: 70vh;
-    background-image: url(ctaa.webp);
-    background-size: cover;
-    backdrop-filter: blur;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  height: 70vh;
+  background-image: url(ctaa.webp);
+  background-size: cover;
+  backdrop-filter: blur;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .testimonials{
-    border: 2px solid brown;
-    padding: 30px;
-    border-radius: 30px;
-    margin: 20px;
+  border: 2px solid teal;
+  padding: 30px;
+  border-radius: 30px;
+  margin: 20px;
 }
 
 .testimonials img{
-    width: 65px;
-    border-radius: 50%;
-    margin-right: 10px;
+  width: 65px;
+  border-radius: 50%;
+  margin-right: 10px;
 }
 
 .testimonials a{
-    color: brown;
+  color: teal;
 }
 
 .faq-section{
-    max-width: 800px;
-    margin: auto;
+  max-width: 800px;
+  margin: auto;
 }
 
 .accordion-item{
-    margin-bottom: 20px;
-    border-radius: 0 !important;
+  margin-bottom: 20px;
+  border-radius: 0 !important;
 }
 
 .accordion-button{
-    background-color: #f8f9fa;
-    border: none;
-    border-bottom: 1px solid #dee2e6;
-    border-radius: 0 !important;
-    padding: 15px;
-    font-size: 18px;
-    font-weight: 500;
-    color: #343a40;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
+  background-color: #f8f9fa;
+  border: none;
+  border-bottom: 1px solid #dee2e6;
+  border-radius: 0 !important;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #343a40;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .accordion-body{
-    border-left: 3px solid brown;
-    padding: 10px 15px;
-    margin-left: 0;
-    background-color: #f8f9fa;
+  border-left: 3px solid teal;
+  padding: 10px 15px;
+  margin-left: 0;
+  background-color: #f8f9fa;
 }
 
 .accordion-button:not(.collapsed){
-    background-color: brown;
-    color: #FFF;
+  background-color: teal;
+  color: #FFF;
 }
 .accordion-button:hover{
-    background-color: brown;
-    color: #FFF;
+  background-color: teal;
+  color: #FFF;
 }
 
 #faq{
-    background-color: #FAFAFA;
+  background-color: #FAFAFA;
 }
